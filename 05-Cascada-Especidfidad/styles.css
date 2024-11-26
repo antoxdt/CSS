@@ -1,0 +1,41 @@
+/*
+Cascada y especifidad
+
+se refiere
+
+
+cascada 
+
+si un selector se repide a lo largo del codigo aplicara al ultimo escrito
+
+especifidad 
+
+Este es el orden de importancia en los selectores
+
+5.Selector de elemento  001
+4. selector de clase    010
+3. selector de id       0100
+2. estilos en linea     1000
+1. important            Vale todo
+*/
+
+/*cascada*/
+
+h1 {
+  color: green;
+}
+
+h1 {
+  color: blue;
+}
+
+/*Especifidad*/
+
+h1 {
+  color: green;
+}
+
+.tittle {
+  color: red;
+}
+

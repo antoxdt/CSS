@@ -60,19 +60,52 @@ Tipos de Selectores
       
 
     -Hijo directo
+    selecciona elementos que son hijos directos de un elemento padre.
+
+
     -Elemento Adjacente
+
+    Selecciona el primer elemento inmediatamente despues de otro.(su hermano inmediato o en ingles siblinsg 
+
+    elemento + elelementoadjacente {
+    propiedad:valor}
+
     -Hermano general
+
+    selecciona todos los elemetos hermanos despues de un elemento
+
+    elemeto ∼
 
 5. Selectores de Atributos
 
      -Atributo
+
+     Selecciona el elemento segun el atributo que indiquemos. sin importar su valor
+      
+     elemento [atributo]
+
+     esto de selecciona 
      -Atributo - Valor
 
 
 6. Selectores Avanzados
 
      -Pseudo-clases
+
+     seleccionamos elementos en un estado en particular 
+
+     elemeto:pseudoclase {
+     propiedad: valor;
+     }
      -Pseudo-elementos
+
+     seleccionan partes especificas en un elemeto html
+
+     elemento ::pseudoelemento {
+     propiedad: valor;
+     }
+     
+     
     
 
 */
@@ -151,7 +184,70 @@ aside section {
   color: white;
   text-align: right;
   padding: 24px;
-  background-color:black;
+  background-color:lightcoral;
+}
+
+/*combinados - hijos directos */
+
+ul > li {
+  background-color: lightblue;
+}
+
+.Lista > li {
+  font-size: 8px;
+  color: darkblue;
+}
+
+/*combinados - elemento adjacente */
+
+h3 +li {
+  list-style: none;
 }
 
 
+  /*combinados - hermano general */
+
+.bro + li ~ li {
+ background-color: yellow;
+}
+
+.tercero ~ li {
+  color: black;
+  font-size: 40px;
+}
+
+/*Selector de atributo*/
+
+a[href] {
+  display: block;
+  text-decoration: none;
+  color: magenta;
+}
+
+/* Selector de atributo con valor */
+
+a[href="https://www.instagram.com/"] {
+font-size: 40px;
+color: orange;
+}
+
+/* pseudo-clases*/
+
+a:hover {
+  background-color: purple;
+  color: white;
+}
+
+a:focus {
+  border: 10px solid red 
+}
+
+/*pseudo elementos*/
+
+a::after {
+content:"🎄" ;
+}
+
+a ::before {
+  content: "Este es un enlace hacia:";
+}
