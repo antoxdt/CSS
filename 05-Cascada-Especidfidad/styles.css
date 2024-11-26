@@ -17,6 +17,9 @@ Este es el orden de importancia en los selectores
 3. selector de id       0100
 2. estilos en linea     1000
 1. important            Vale todo
+
+Si las reglas tienen l misma especifidad se aplica la ultima que aparece 
+
 */
 
 /*cascada*/
@@ -31,11 +34,27 @@ h1 {
 
 /*Especifidad*/
 
+.tittle {
+  color: red;
+}
+
+.tittle {
+  color: orangered;
+}
+
+
 h1 {
   color: green;
 }
 
-.tittle {
-  color: red;
+h1 {
+  color: chocolate;
 }
+
+h1 {
+  color: blueviolet !important;
+}
+
+
+
 
