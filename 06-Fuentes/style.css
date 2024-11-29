@@ -1,0 +1,77 @@
+/* Fuentes 
+Las fuentes son un aspecto clva en el diseño web, influyen en la estetica, legibilidad y jerarquia visual
+
+en css la propiedad que define el tipo de duentes en las reglas en:
+
+font-family: "nombre de la fuente"
+
+fuentes que son seguras son tipografias predeterminadas y que se pueden ysar eb cualquier sistema operativo web
+
+-Por estilo y categoria:
+-serif
+-sans serif
+-monospace
+-cursive
+-fantasy
+
+Por nombre de la familia tipografica
+ -Arial
+ -"Times New Roman"
+ -Verdana
+ -Gevana
+ -...
+
+ los valores que tienen mas de una palabra se escriben entre comillas dobles o simples
+
+ Se recomienda tener fuentes de respaldo, si por alguna razon no se carga la fuente principal, se mostraran las fentes secundarias
+
+ - Arial, verdana, Sans-serif;
+ "Times New Roman", "Courier new", serif
+
+ Fuentes personalizadas
+
++ Fuentes externas
+
+Son recursos que traemos de servidores remotos.
+
+ -Google fonts
+ -Adobe fonts
+ -Fonts squirlt
+ -...
+
+ + Fuentes internas
+
+ Son recursos que tenemos en nustro propio servidor o sistemas
+ de carpetas
+
+ -Descargamos
+ -Gardamos en una carpeta especifica de nuestro sitio web
+ 
+*/
+
+html {
+
+  /* Por estilos y categorias */
+font-family: serif; /* default */
+font-family: sans-serif; /*Sin patine, palo seco  */
+font-family: monospace; /*Mono espaciado */
+font-family: cursive;/* Decorativas */
+font-family: fantasy; /* describtivas con glifos no convencionales*/
+
+/* Por nombre de familia tipografica */
+font-family: Arial, Helvetica, sans-serif;
+font-family: "Times New Roman";
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: "gill sans";
+font-family: "courier new";
+
+/* Fuentes de respaldo */
+
+font-family: Arial, Helvetica, sans-serif;
+font-family: 'Times New Roman', Times, serif;
+font-family: cambria, cochin, georgia, times;
+
+/* Fuentes personalizadas */
+
+
+}
