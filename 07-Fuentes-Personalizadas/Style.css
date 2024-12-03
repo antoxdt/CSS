@@ -1,0 +1,126 @@
+/* 
+Fuentes persolanizadas
+
+Las llamamos de servidores remotos
+
+Fuentes internas
+
+Las llamamos de nuestros equipos
+
+Google Fonts
+
+Caalogo de fuentes que podemos usar de manera gruatuita en internet 
+
+-Optimizadas para digital
+-Gratuitas de uso comercial
+-Curadas de alta calidad
+-Código de vinculación para web
+
+https://fonts.google.com/
+
+1. Seleccionar la fuente y traer el código de inscrustacion o embed code al html, lo pegamos dentro de las etiquetas <head>
+
+2.Definimos las reglas css las que se las queremos aplicar usamos las propiedades font-family, font-weigth, font-style, (para las tipografias estaticas9
+
+fuentes internas 
+
+llamamos desde nuestro propio servidor o carpeta de recursos.
+
+1. Debemos tener los archivos en una carpeta especidfica
+2.formatos comunes .ttf .otf .wof .woff2, etc...
+Declaramos en css @fonts-face
+
+@fonts-face
+font-family: nombre de la fuente; // Dos palabrs entre "..."
+src: url (ubicacion), format(formato); //ubicacion y formato entre ""
+
+NO OLVIDAR LA COMA DESPUES DE LA URL
+
+creamos la regla css
+
+selector {
+font-family: nombrefuente, respaldo;
+}
+
+*/
+
+/* Tipografias estaticas */
+
+h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 700; /* Elige el grosor o peso de la tipografia */
+  font-style: italic; /* Elige el stylo talic etc */
+}
+
+p {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* Tipografias variables */
+
+.tittle {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 876;
+  font-style: italic;
+  transition: font-weight 1s ease;
+}
+
+.tittle:hover {
+  font-weight: 182;
+  transition: font-weight 1s ease;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 456;
+  font-style: normal;
+}
+
+/* Elegir dos fuentes distintas en google fonts
+una para el titulo
+una para titulo
+una para parrafo
+crear la regla csspara cada elemento con un selector de id
+
+Nota: comentar los codigos incrustados anteriormente*/
+
+#titulito {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  
+}
+
+#textito {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  
+}
+
+/* Fuentes internas */
+
+  @font-face {
+    font-family: "BrownRosemary";
+    src: url(./Fonts/BrownRosemary.ttf), format(ttf);
+  }
+
+  
+  @font-face {
+    font-family: "CaviarDreams";
+    src: url(./Fonts/CaviarDreams.ttf), format(ttf);
+  }
+
+  #titulito {
+    font-family: "BrownRosemary", sans-serif;
+
+  }
+
+  #textito {
+    font-family: "CaviarDreams", sans-serif;
+  }
+
