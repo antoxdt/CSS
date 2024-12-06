@@ -1,0 +1,55 @@
+
+/* Propiedad de texto estan relacionados con el estilo o formato de los textos
+
+Permiten controlar su apariencia, alineacion, espaciado y deroracion
+
+Principales
+
+color: -> define el colores del texto
+diferencias de tipos de parametros: keywords, hezadecimal, 
+font-family: define la familia tipografica del texto. recibe los nombres de las familias, si son de dos palabras se escriben entre comilla acepta mas dedos opciones como fuentes de respaldo
+
+font-size -> Define el tamaño del texto.
+Acepta valores px, em y rem, terminos predeterminados
+
+font-style -> El estilo de la fuente y recibe tres parametros. normal, italic y oblique
+
+text-aling: define la alineacion del texto recibe los parametros, left, rigth, center, justify, star y end.
+
+texr-decoration -> Añade un linea transveral al texto. Recibe valores como: none, underline, averline, line-through
+
+*/
+
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+h1 {
+color:pink; /* Keywords */
+font-family: impact, helvetica;
+font-size: 64px;
+font-size: 130px;
+font-style:oblique ; 
+text-align: center;
+text-decoration: underline;
+}
+
+p {
+color: beige; /* Keywords */
+font-family: "courier new", Thohoma;
+font-size: 24px;
+text-align: left;
+text-decoration: ;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+a {
+  font-size: 30px;
+  color: white;
+}
+
+
