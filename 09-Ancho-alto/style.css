@@ -1,0 +1,70 @@
+body {
+  background-color:darkgoldenrod;
+}
+
+
+/* 
+Ancho y alto 
+
+los elementos de bloque siguen todo el ancho disponible de su contenedor 
+
+-los elementos de bloqe miden el alto de su contenido 
+
+-Los elementos de linea miden el ancho del contenido 
+
+-Los elementos de bloque miden el alto del contenido 
+
+wihth (ancho) y weigth (alto)
+
+se usan para establecer las dimenciones de un elemento en una página web 
+
+Estas propiedades permiten medir el tamaño de los elemtos como caja, margenes o contenedoresde manera explícita
+
+With establece el ancho de un elemento y podemos especificar su tamaño o dimension horizontal con unidades como px, %, em, ram
+
+-Heigth  establece la altura de un elemento y podemos especificar dimension 
+
+* Si no se especifica a un elemento de un bloque el elemento ajustará su altura al contenido 
+
+* Si usamos valores con unidades absolutas, matamos la adaptabilidad de los elementos. Es recomendable usar unidades relativas com % o vw (Viewport)
+
+Para los elementos de linea el with y el heigth no funcionan. Por default se ajustarán a su contenido 
+
+Si queremos que un elemento de línea responda a su ancho y un alto explícito, necesitamos cambiar su comportamiento de visualizacion a través de la propiedad de display
+
+Para esto la propiedad display puede recibir los valores de inline-block o block.
+
+*/
+
+.titulo {
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+.bloque {
+  
+  font-family: Arial, Helvetica, sans-serif;
+
+  width: 100px; /* U. Absoluta */
+  width: 50px; /* D. Relativa */
+  width: auto;/* Default */
+  
+  height: 100px; /* U. Absoluta */
+  height: 50px; /* D. Relativo */
+  height: auto; /* Default */
+  height: 50vw; /* Total de la altura de la ventana */
+
+  background-color: blanchedalmond;
+}
+
+.linea {
+  display: block;
+
+  font-family: sans-serif;
+
+  width: 100px;
+  height: 100px;
+
+
+  background-color:burlywood;
+}
