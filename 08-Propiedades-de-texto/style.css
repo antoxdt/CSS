@@ -1,5 +1,6 @@
 
-/* Propiedad de texto estan relacionados con el estilo o formato de los textos
+/* 
+Propiedad de texto estan relacionados con el estilo o formato de los textos
 
 Permiten controlar su apariencia, alineacion, espaciado y deroracion
 
@@ -16,7 +17,25 @@ font-style -> El estilo de la fuente y recibe tres parametros. normal, italic y 
 
 text-aling: define la alineacion del texto recibe los parametros, left, rigth, center, justify, star y end.
 
-texr-decoration -> Añade un linea transveral al texto. Recibe valores como: none, underline, averline, line-through
+text-decoration -> Añade un linea transveral al texto. Recibe valores como: none, underline, averline, line-through
+
+text-transform-> controla la copitalizacion del texto.
+Recibe los valores: appercase, lowcarse u capitalize.
+
+line-heigt -> Espacio entre las lineas de texto, recibe valoress en px, %, em y rem relativo al tamaño de la fuente.
+
+letter-spacing -> Espacio entre letra. Recibe valores en px, %, em y rem
+
+Word-spacing -> espacio entre palabras. Recibe valores en px, %, em y rem 
+
+text-shadow -> sombre del texto. Recibe los valores en este orden:
+offset-x, offset-y, blur color
+
+10px 10px 10px red -> derecha y abajo 
+
+-10px -10px -10px blue ->
+izquierda y arriba
+
 
 */
 
@@ -27,20 +46,50 @@ body {
 
 h1 {
 color:pink; /* Keywords */
+
 font-family: impact, helvetica;
 font-size: 64px;
 font-size: 130px;
 font-style:oblique ; 
+
 text-align: center;
 text-decoration: underline;
+text-transform: uppercase;
+
+letter-spacing: 20px;
+letter-spacing: 1rem;
+letter-spacing: 2em;
+letter-spacing: -10rm;
+letter-spacing: normal;
+
+text-shadow: 10px 10px 5px red;
+
+
+
 }
+
 
 p {
 color: beige; /* Keywords */
 font-family: "courier new", Thohoma;
 font-size: 24px;
+
 text-align: left;
 text-decoration: ;
+text-transform: lowercase;
+text-transform: capitalize;
+
+line-height: 24px;
+line-height: 150%;
+line-height: 4;
+line-height: 1rem;
+line-height: 1em;
+
+word-spacing: 60px;
+word-spacing: 2rem;
+word-spacing: 5em;
+word-spacing: normal;
+
 }
 
 .underline {
