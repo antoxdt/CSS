@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+  body{
+  font-family: sans-serif; 
+  color: whitesmoke;
+  background-color:lightslategrey;
+}
+
+/* bOX MODEL 
+  Es un concepto fundamental que describe los elementos de una pagina web que organizan y calculan su tamaño.
+
+
+  1. Contenido
+
+    Es el area donde se encrientea el textom las imagens u oto elemmtno hijo. el manaño de esta area se define con las propiedades whidth y heigth
+
+  2. Relleno (pading)
+    Es el espacio entre el contenido y el borde de la caja ayuda a crear del contenido
+
+    La propiedad de padding es un "Shorthand" que controla los 4 lados posibles de la caja.
+      padding: Top rigth buttom left;
+      padding; top left/rigth buttom;
+      padding: top/bottom rigth/left;
+      padding: t/r/b/l;
+      
+      padding-top: valor;
+      padding-rigth: valor;
+      padding-buttom: valor;
+      padding-left: valor;
+
+  3. borde (border)
+  
+    Es el biode que rodea el contenido y el contenido podemos personalizar su grozor, estilo y color tambien en una propidead shorthand
+
+      border; ancho estilo color
+
+      border-width: Valor;
+      border-color: VAlor;
+      border-style: Valor;
+      
+      border-top-color: Valor;
+      border-rigth-color: VAlor;
+      border-style: Valor;
+
+      Valores estilo borde:
+
+        -none
+        -hidden
+        -solid
+        -dotted
+        -dashed
+        -double
+        -groove
+        -ridge
+        -inset
+        -ouset
+
+
+  4. Mergen 
+
+  Permite tener espacio entre el border de un elemento y otros elementos de la pagina. Tambien es un shorthead
+
+    margin: top rigth bottom left;
+    margin: top rigth/left bottom;
+    margin: top bottom/left rigth;
+*/
+/* content */
+h2{
+  
+  padding: 24px;
+  border: 5px solid black;
+
+  margin: 2px 16px 24px 32px;
+
+  width: 200px;
+  height: 80px;
+  background-color: goldenrod;
+
+}
+
+img{
+  padding: 24px 48px;
+
+  border-width: 10px;
+  border-style: inset;
+  border-color: gray;
+
+  line-height: none;
+  margin: 12px 24px 48px;
+
+  width: 100px;
+  height: 100px;
+  background-color: snow;
+
+}
+
+ul{
+  padding: 24px 48px 64px;
+
+  border-top-style: dashed;
+  border-top-color: darkorange;
+  border-top-width: 20px;
+
+  border-left-style: groove;
+  border-left-color: slategrey;
+  border-left-width: 10px;
+
+  margin: 48px 8px ;
+
+  width: 400px;
+  height: auto;
+  list-style: none;
+  background-color:indigo;
+
+}
+
+li {
+
+  border-bottom-style: dotted;
+  border-bottom-color: maroon;
+  border-bottom-width: 10px;
+
+  padding: 8px 16px 24px 32px;
+
+  margin: 12px;
+
+  width: 200px;
+  height: 100px;
+  background-color: lightsalmon;
+}
