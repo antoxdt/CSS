@@ -1,0 +1,56 @@
+/* 
+Box sizing
+Es la propiedad que calcula la dismension de un elemento incluyendo el padding y el border. Los valores que pueden tener son:
+
+Box-sizing: content box; // valor por defecto
+
+si tenemos un elemento con whith 100px, un padding 10px y un border de 5px, el ancho total del elemento sera de 130px
+
+100px + 10px + 10px + 5px = 130px
+ancho + padding + border l/r
+Esto es porque el padding y el border se suma al width del elemento.
+
+box-sizing: border box; // incluyendo el padding y el border
+
+si tenemos un elemento con whith 100px, un padding 10px y un border de 5px, el ancho total del elemento sera de 100px
+
+esto porque el padding y el border se incluyen en el width
+
+Nota: Como buena practica se suele definir a todos los elementos de html la propiedad box-sizing: border-box, desde el pricipio a modo de reset basico
+
+* {
+box-sizing: boder-box;
+}
+
+Esto se hace através del selector universal "*" 
+
+ */
+
+ /* Reset de estilos */
+ 
+html {
+  font-family: sans-serif;
+}
+
+body {
+background-color: darkslategray;
+color: white;
+}
+
+.content-box {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 5px solid lightgreen;
+  background-color: darksalmon;
+  box-sizing: content-box; /* Defaul */
+}
+
+.border-box {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 5px solid lightblue;
+  background-color: lightslategrey;
+  box-sizing: border-box; /* Defaul */
+}
