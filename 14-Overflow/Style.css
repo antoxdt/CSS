@@ -1,0 +1,50 @@
+/* Overflow 
+
+
+  es la propedad que controla quye el comportamiento  de im contenedor se desborda.
+
+  Desboard Cuando el contenido de un elemento sale por fuera de los bordes de la caja que lo contiene
+
+Es una propiedad que engloba dos propiuedades  overflow-X y overflow-Y
+
+  Tiene cuatro valores: 
+
+    Visible -> Es eñ valorpo defecto 
+    Hidden  ->el contenido que desvorda se ocultara a  partir del vorde del contenedor 
+    Scroll -> Aparecen barras de scroll en eje asignado
+    Auto   -> aparece en las barras de scroll solo en caso de ser necesario 
+
+ */
+ html {
+  background-color: darkslateblue;
+  color: whitesmoke;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.box {
+  background-color: lightcoral;
+  width: 500px;
+  height: 500px;
+  overflow: visible; /* defaul */
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+}
+
+.text {
+font-size: 24px;
+}
+
+.box-2 {
+  width: fit-content;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: aqua;
+
+}
+.img{
+  display: block
+}
